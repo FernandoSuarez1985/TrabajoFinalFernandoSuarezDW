@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  background-color: rgb(50, 56, 75);
+  display: flex;
+  gap: 20px;
+  grid-gap: 20px;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+}
+header .navbar .menu {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  grid-gap: 10px;
+}
+
+.tarjeta {
+  padding: 60px;
+  display: flex;
+  gap: 30px;
+}
+.tarjeta .tarjeta {
+  background-color: rgb(50, 56, 75);
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.tarjeta .tarjeta .informacion {
+  padding: 0 20px 20px 20px;
+}
+.tarjeta .tarjeta .tarjeta__imagen {
+  max-width: 100%;
+}
+.tarjeta .tarjetablue {
+  background-color: blue;
+}
+.tarjeta .tarjetayellow {
+  background-color: yellow;
+}
+.tarjeta .tarjetablack {
+  background-color: black;
+}
+
+.pie {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(50, 56, 75);
+  color: white;
+  padding-block: 20px;
+}
+.pie .iconos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.pie .iconos .fab {
+  padding: 1rem;
+}
+
+.fa-facebook {
+  background-color: blue;
+}
+
+.fa-instagram {
+  background-color: red;
+}
+
+.fa-whatsapp {
+  background-color: green;
+}/*# sourceMappingURL=style.css.map */

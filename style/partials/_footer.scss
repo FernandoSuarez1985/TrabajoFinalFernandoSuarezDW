@@ -1,0 +1,29 @@
+.pie {
+    display: flex;
+    justify-content: center;
+    background-color: $mainColor;
+    color: white;
+    padding-block: 20px;
+
+    .iconos {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        
+        .fab {
+            padding: 1rem;
+        }
+    }
+}
+
+$redes: (
+    facebook: blue,
+    instagram: violet,
+    whatsapp: green,
+);
+
+@each $redsocial, $colordered in $redes {
+    .fa-#{$redsocial} {
+        background-color: $colordered;
+    }
+}
