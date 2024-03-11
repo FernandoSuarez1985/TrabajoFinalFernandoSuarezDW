@@ -48,7 +48,7 @@ header {
             @for $item from 1 through 6 {
 
                 .menu__item:nth-child(#{$item}) {
-                    animation-delay: $item*0.3s;
+                    animation-delay: $item*0.1s;
                 }
                 
             }

@@ -2,5 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+    font-family: $fontRubik;
+
+    &  ::selection{
+        background-color: rgba(168, 15, 15, 0.767);
+        color: pink;
+    }
 }

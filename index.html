@@ -6,94 +6,86 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/5defac5f80.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./ccs/main.css">
+    <link rel="stylesheet" href="./ccs/style.css">
 </head>
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+    <img class="logo" src="./img/logo.jpg" alt="Logo">
+    <nav class="navbar">
+        <ul class="menu">
+            <li class="menu__item">
+                <a href="./index.html">Inicio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./productos.html">Productos</a>
+            <li class="menu__item">
+                <a href="./pages/blog.html">Blog</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
+            <li class="menu__item">
+                <a href="./pages/contacto.html">Contacto</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./envio.html">Envio</a>
+            <li class="menu__item">
+                <a href="./pages/carreras.html">Carreras</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./blog.html">Blog</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+            <li class="menu__item">
+              <a href="./pages/nosotros.html">Nosotros</a>
+          </li>
+          <li class="menu__item">
+              <a href="./pages/productos.html">Productos</a>
+          </li>
+        </ul>
     </nav>
   </header>
 
-
-
-
-  <section class="hero d-flex justify-content-center align-items-center">
-    <h2 class="text-white bg-dark p-2 rounded">ShoeShop</h2>
-  </section>
-  <section class="tarjetas">
-      <div class="tarjeta row mt-3 h-100" >
-        <img src="./img/01.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3 class="card-title">Card title</h3>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+  <main>
+    <section class="imagenPrincipal">
+      <h2 class="text-white bg-dark p-2 rounded">ShoeShop</h2>
+    </section>
+    <section class="tarjetas">
+        <div class="tarjeta row mt-3 h-100" >
+          <img src="./img/01.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Card title</h3>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
-      </div>
-      <div class="tarjeta row mt-3 h-100" >
-        <img src="./img/02.jpg" class="card-img-top" alt="tarjeta_imagen">
-        <div class="card-body">
-          <h3 class="card-title">Card title</h3>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="tarjeta row mt-3 h-100" >
+          <img src="./img/02.jpg" class="card-img-top" alt="tarjeta_imagen">
+          <div class="card-body">
+            <h3 class="card-title">Card title</h3>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
-      </div>
-      <div class="tarjeta row mt-3 h-100"  >
-        <img src="./img/03.jpg" class="card-img-top" alt="tarjeta_imagen">
-        <div class="card-body">
-          <h3 class="card-title">Card title</h3>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="tarjeta row mt-3 h-100"  >
+          <img src="./img/03.jpg" class="card-img-top" alt="tarjeta_imagen">
+          <div class="card-body">
+            <h3 class="card-title">Card title</h3>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
-      </div>
-      <div class="tarjeta row mt-3 h-100"  >
-        <img src="./img/04.jpg" class="card-img-top" alt="tarjeta_imagen">
-        <div class="card-body">
-          <h3 class="card-title">Card title</h3>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="tarjeta row mt-3 h-100"  >
+          <img src="./img/04.jpg" class="card-img-top" alt="tarjeta_imagen">
+          <div class="card-body">
+            <h3 class="card-title">Card title</h3>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
-      </div>
+    </section>
+  </main>
 
-  </section>
+  <footer class="pie">
+    <div class="iconos">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-whatsapp"></i>
+    </div>
+  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
-
-<footer class="pie">
-  <div class="iconos">
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-whatsapp"></i>
-  </div>
-</footer>
 </html>

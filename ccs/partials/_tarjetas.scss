@@ -1,4 +1,4 @@
-.tarjeta {
+.tarjetas {
     padding: 60px;
     display: flex;
     gap: 30px;
@@ -12,20 +12,12 @@
         gap: 10px;
         flex: 1;
 
-        .informacion {
+        .card-body {
             padding: 0 20px 20px 20px;
         }
 
         .tarjeta__imagen {
             max-width: 100%;
-        }
-
-
-    }
-
-    @each $color in blue, yellow, black {
-        .tarjeta#{$color} {
-            background-color: $color;
         }
     }
 }

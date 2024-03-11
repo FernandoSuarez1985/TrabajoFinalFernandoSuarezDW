@@ -5,12 +5,23 @@
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
 }
+* ::-moz-selection {
+  background-color: rgba(168, 15, 15, 0.767);
+  color: pink;
+}
+* ::selection {
+  background-color: rgba(168, 15, 15, 0.767);
+  color: pink;
+}
 
 header {
-  background-color: rgb(50, 56, 75);
+  background-color: pink;
   display: flex;
   gap: 20px;
   grid-gap: 20px;
+}
+header .logo {
+  width: 100px;
 }
 header .navbar {
   display: flex;
@@ -22,14 +33,73 @@ header .navbar .menu {
   gap: 10px;
   grid-gap: 10px;
 }
+header .navbar .menu .menu__item {
+  animation: swirl-in-fwd 0.6s ease-out both;
+}
+header .navbar .menu .menu__item a {
+  background: white;
+  border: 5px solid white;
+  color: pink;
+  text-decoration: none;
+  padding: 1rem;
+}
+header .navbar .menu .menu__item a:hover {
+  background: pink;
+  color: white;
+}
+header .navbar .menu .menu__item:nth-child(6) a {
+  background: green;
+  border-color: green;
+  color: white;
+}
+header .navbar .menu .menu__item:nth-child(1) {
+  animation-delay: 0.3s;
+}
+header .navbar .menu .menu__item:nth-child(2) {
+  animation-delay: 0.6s;
+}
+header .navbar .menu .menu__item:nth-child(3) {
+  animation-delay: 0.9s;
+}
+header .navbar .menu .menu__item:nth-child(4) {
+  animation-delay: 1.2s;
+}
+header .navbar .menu .menu__item:nth-child(5) {
+  animation-delay: 1.5s;
+}
+header .navbar .menu .menu__item:nth-child(6) {
+  animation-delay: 1.8s;
+}
+@keyframes swirl-in-fwd {
+  0% {
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+.imagenPrincipal {
+  background-image: url("../img/hero.jpg");
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 200px;
+}
 
-.tarjeta {
+.tarjetas {
   padding: 60px;
   display: flex;
   gap: 30px;
 }
-.tarjeta .tarjeta {
-  background-color: rgb(50, 56, 75);
+.tarjetas .tarjeta {
+  background-color: pink;
   border-radius: 30px;
   overflow: hidden;
   display: flex;
@@ -37,46 +107,9 @@ header .navbar .menu {
   gap: 10px;
   flex: 1;
 }
-.tarjeta .tarjeta .informacion {
+.tarjetas .tarjeta .card-body {
   padding: 0 20px 20px 20px;
 }
-.tarjeta .tarjeta .tarjeta__imagen {
+.tarjetas .tarjeta .tarjeta__imagen {
   max-width: 100%;
-}
-.tarjeta .tarjetablue {
-  background-color: blue;
-}
-.tarjeta .tarjetayellow {
-  background-color: yellow;
-}
-.tarjeta .tarjetablack {
-  background-color: black;
-}
-
-.pie {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(50, 56, 75);
-  color: white;
-  padding-block: 20px;
-}
-.pie .iconos {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.pie .iconos .fab {
-  padding: 1rem;
-}
-
-.fa-facebook {
-  background-color: blue;
-}
-
-.fa-instagram {
-  background-color: red;
-}
-
-.fa-whatsapp {
-  background-color: green;
 }/*# sourceMappingURL=style.css.map */
