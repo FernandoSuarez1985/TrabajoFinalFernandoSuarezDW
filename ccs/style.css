@@ -112,4 +112,42 @@ header .navbar .menu .menu__item:nth-child(6) {
 }
 .tarjetas .tarjeta .tarjeta__imagen {
   max-width: 100%;
+}
+
+.pie {
+  display: flex;
+  justify-content: center;
+  background-color: pink;
+  color: white;
+  padding-block: 20px;
+}
+.pie .iconos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.pie .iconos .fab {
+  padding: 1rem;
+}
+
+.fa-whatsapp, .fa-facebook, .fa-instagram {
+  width: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+.fa-whatsapp:hover, .fa-facebook:hover, .fa-instagram:hover {
+  background-color: transparent;
+}
+
+.fa-facebook {
+  background-color: rgb(88, 52, 155);
+}
+
+.fa-instagram {
+  background-color: #5f294d;
+}
+
+.fa-whatsapp, .fa-instagram, .fa-facebook {
+  background-color: #3fda10;
 }/*# sourceMappingURL=style.css.map */
