@@ -2,22 +2,52 @@
     padding: 60px;
     display: flex;
     gap: 30px;
+    flex-wrap:wrap;
+
 
     .tarjeta {
         background-color: $mainColor;
         border-radius: 30px;
         overflow: hidden;
-        display: flex;
+        display: grid;
         flex-direction: column;
         gap: 10px;
-        flex: 1;
+
+        @media screen and (max-width: 768px) {
+                flex-direction: column;
+                
+            }
+        
+        @media screen and (max-width: 480px) {
+                display: flex;
+                flex-direction: column;
+        }
+        
 
         .card-body {
             padding: 0 20px 20px 20px;
+            display: -moz-inline-grid;
         }
 
         .tarjeta__imagen {
             max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .tarjetas {
+            flex-direction: column;
+            
+        }
+        
+    }
+    
+    @media screen and (max-width: 480px) {
+    
+        .tarjetas {
+            display: flex;
+            flex-direction: column;
         }
     }
 }

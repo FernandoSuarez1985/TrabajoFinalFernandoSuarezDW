@@ -97,21 +97,44 @@ header .navbar .menu .menu__item:nth-child(6) {
   padding: 60px;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .tarjetas .tarjeta {
   background-color: pink;
   border-radius: 30px;
   overflow: hidden;
-  display: flex;
+  display: grid;
   flex-direction: column;
   gap: 10px;
-  flex: 1;
+}
+@media screen and (max-width: 768px) {
+  .tarjetas .tarjeta {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .tarjetas .tarjeta {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .tarjetas .tarjeta .card-body {
   padding: 0 20px 20px 20px;
+  display: -moz-inline-grid;
 }
 .tarjetas .tarjeta .tarjeta__imagen {
   max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .tarjetas .tarjetas {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .tarjetas .tarjetas {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .pie {
